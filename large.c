@@ -1,10 +1,19 @@
-#include<stdio.h>
-void main()
-{
-int i,j,k;
-int s;
-scan("%d%d%d",&i,&j,&k);
-s=((i>j?(i>k)?i:k):((j>k)?j:k));
-printf("%d",s);
+#include <stdio.h>
 
+int main(void) {
+	// your code goes here
+
+int i,j,k;
+scanf("%d%d%d",&i,&j,&k);
+if(i>j&&i>k)
+printf("%d",i);
+else
+{
+if(j>i&&j>k)
+printf("%d",j);
+else
+printf("%d",k);
 }
+
+return 0;
+	
